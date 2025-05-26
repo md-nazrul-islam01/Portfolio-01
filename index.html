@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Md. Nazrul Islam</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ 
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#" class="logo">Portfolio</a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="bx bx-menu"></i>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="home">
+        <div class="home-info">
+            <!-- Profile Picture -->
+            <div class="profile-container">
+                <img src="my portfolio pic.jpg" alt="Md. Nazrul Islam" class="profile-pic">
+            </div>
+            <h1>Md. Nazrul Islam</h1>
+            <h2>I'm a Frontend Developer</h2>
+            <p>
+                Hello! I'm <strong>Md. Nazrul Islam</strong>, a passionate web developer and a 
+                Computer and Communication Engineering (CCE) student at IIUC.
+                I specialize in building dynamic, user-friendly websites with 
+                modern technologies. Constantly learning and innovating, 
+                I strive to create impactful digital experiences. 
+                Let’s build something amazing together!
+            </p>
+
+            <!-- Download CV Button -->
+            <a href="#" class="btn-cv">Download CV</a>
+
+            <!-- Social Media Icons -->
+            <div class="sci">
+                <a href="#"><i class="bx bxl-github"></i></a>
+                <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+                <a href="#"><i class="bx bxl-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector(".nav-links");
+            navLinks.classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+</html>
